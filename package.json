@@ -1,0 +1,37 @@
+{
+  "name": "dayz-discord-rcon-bot",
+  "version": "0.0.1",
+  "description": "A bot for DayZ that does somethings with Discord and RCON. Inspired by GrosTon1's dayz-bigbrother",
+  "main": "bot.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukemeaden/dayz-discord-rcon-bot.git"
+  },
+  "keywords": [
+    "bot",
+    "dayz",
+    "discord",
+    "rcon"
+  ],
+  "author": "Luke Meaden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukemeaden/dayz-discord-rcon-bot/issues"
+  },
+  "homepage": "https://github.com/lukemeaden/dayz-discord-rcon-bot#readme",
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "battleye": "github:lukemeaden/battleye",
+    "dateformat": "^3.0.3",
+    "discord.js": "^12.3.1",
+    "lodash": "^4.17.20",
+    "nodemon": "^2.0.4",
+    "tail": "^2.0.4"
+  }
+}
