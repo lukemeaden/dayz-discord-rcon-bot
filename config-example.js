@@ -17,6 +17,8 @@ export const CONFIG = {
         GUILD_ID: 'discord guild id',
         ENABLE_PLAYER_COUNT_STATUS: true,
         ENABLE_PLAYER_QUEUE_STATUS: true,
+        ENABLE_LOGS: true,
+        ENABLE_RESPONSE: true,
         CHANNELS: {
             CONNECTION: {
                 NAME: 'connections',

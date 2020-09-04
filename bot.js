@@ -10,16 +10,18 @@ import { formatServerLogLine } from './lib/serverLogs';
 client.once('ready', () => {
     console.info(`Logged in as ${client.user.tag}!`);
 
-    tail.on('line', line => {
-        const formattedLine = formatServerLogLine(line);
-        if (formattedLine) sendMessage(formattedLine, client);
-    });
+    if (CONFIG.DISCORD.ENABLE_LOGS) {
+        tail.on('line', line => {
+            const formattedLine = formatServerLogLine(line);
+            if (formattedLine) sendMessage(formattedLine, client);
+        });
+    }
 
-    rcon(client);
+    if (CONFIG.DISCORD.ENABLE_PLAYER_COUNT_STATUS) rcon(client);
 });
 
 client.on('message', msg => {
-    maybeRespond(msg);
+    if (CONFIG.DISCORD.ENABLE_RESPONSE) maybeRespond(msg);
 });
   
 
