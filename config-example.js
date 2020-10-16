@@ -7,7 +7,7 @@ export const CONFIG = {
 
     RCON: {
         NAME: 'DayZ Server',
-        IP: 'localhost',
+        IP: '127.0.0.1',
         PORT: '2302',
         PASSWORD: 'pass123'
     },
